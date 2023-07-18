@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+    <title>Candle Timer</title>
+  </head>
+  <body>
+    <div class="controls">
+      <button id="start" class="button-62">Start</button>
+      <button id="reset" class="button-62">Reset</button>
+      <input type="text" id="hms" value="00:00:00" />
+    </div>
+
+    <button id="close" class="button-62">X</button>
+
+    <div class="candle">
+      <div id="flame" class="flame">
+        <div id="shadows" class="shadows"></div>
+        <div id="top" class="top"></div>
+        <div class="middle"></div>
+        <div id="bottom" class="bottom"></div>
+      </div>
+      <div id="wick" class="wick"></div>
+      <div id="wax" class="wax"></div>
+    </div>
+
+    <div id="smoke" class="smoke-parent">
+      <div class="smoke-wrap">
+        <img class="smoke" src="./smoke.png" alt="smoke" />
+      </div>
+      <div class="smoke-wrap">
+        <img class="smoke2" src="./smoke.png" alt="smoke" />
+      </div>
+      <div class="smoke-wrap">
+        <img class="smoke3" src="./smoke.png" alt="smoke" />
+      </div>
+    </div>
+
+    <script src="./renderer.js"></script>
+  </body>
+</html>
